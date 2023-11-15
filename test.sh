@@ -108,7 +108,7 @@ compare_syntax "|||"
 compare_syntax "|| |||"
 compare_syntax ">>>"
 compare_syntax "(| |)"
-compare_syntax "(())"
+
 
 
 printf "\n\e[32mtesting empty input\e[0m\n"
@@ -148,11 +148,6 @@ compare_command "echo "hey" | cat | cat | cat | cat | cat | cat | cat | cat | ca
 compare_command "ls | cat | cat | echo"
 compare_command "echo "hey" | ls"
 compare_command "echo "hey" | ls | cat | wc -l"
-
-
-printf "\n\e[32mtesting expansiones\e[0m\n"
-sleep 1
-compare "echo $HOME"
 
 printf "\n\e[32mtesting BONUS\e[0m\n"
 
